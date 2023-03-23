@@ -14,13 +14,13 @@ const rand = function(min, max) {
     ctx = canvas.getContext('2d');
     ctx.globalCompositeOperation = 'lighter';
   });
-  let backgroundColors = [ '#000', '#000' ];
+  let backgroundColors = [ '#32174d', '#32174d' ];
   let colors = [
     [ '#002aff', "#047bbb" ],
     [ '#0054ff', '#b100cd' ], 
     [ '#4c00b0' ,'#873dcc' ]
   ];
-  let count = 70;
+  let count = 20;
   let blur = [ 4, 50 ];
   let radius = [ 30, 200 ];
   
@@ -105,6 +105,7 @@ const rand = function(min, max) {
         ctx.closePath();
       
     });
+    console.log(timestamp);
     window.requestAnimationFrame(changeCanvas);
     
   }
